@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Densidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/mont" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="color_fuente">RN</h1>
+        <h2 class="color_fuente">Calculadora de Den-Vol-masa</h2>
+        <form id="densityForm">
+            <label for="mass" class="color_fuente">Masa (toneladas):</label>
+            <input type="number" min="1" pattern="^[0-9]+" id="mass" step="any">
+            <label for="volume" class="color_fuente">Volumen (metros cúbicos):</label>
+            <input type="number" min="1" pattern="^[0-9]+" id="volume" step="any">
+            <label for="density" class="color_fuente">Densidad (Tonelada por m³):</label>
+            <input type="number" min="1" pattern="^[0-9]+" id="density" step="any">
+            <button type="button" onclick="calculateDensity()">Calcular</button>
+        </form>
+    </div>
+    <div class="refrescar"><a href="./index.html">Hacer Otro Cálculo</a></div>
+
+    <div class="container">
+        <h2 class="color_fuente">Lista de las densidades más comunes</h2>
+        <table class="density-table">
+            <thead>
+                <tr>
+                    <th class="color_fuente">Material</th>
+                    <th class="color_fuente">Densidad (Tn/m³)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="color_fuente">Arena</td>
+                    <td class="color_fuente">1.6</td>
+                </tr>
+                <tr>
+                    <td class="color_fuente">Piedras</td>
+                    <td class="color_fuente">1.7</td>
+                </tr>
+                <tr>
+                    <td class="color_fuente">Calcáreo</td>
+                    <td class="color_fuente">2.3</td>
+                </tr>
+                <tr>
+                    <td class="color_fuente">Revuelto</td>
+                    <td class="color_fuente">1.8</td>
+                </tr>
+                <tr>
+                    <td class="color_fuente">Arena Silicea T.</td>
+                    <td class="color_fuente">2.6</td>
+                </tr>
+                <tr>
+                    <td class="color_fuente">Piedra Laja</td>
+                    <td class="color_fuente">2.7</td>
+                </tr>
+                <tr>
+                    <td class="color_fuente">Porfido</td>
+                    <td class="color_fuente">2.8</td>
+                </tr>
+                <tr>
+                    <td class="color_fuente">Yeso</td>
+                    <td class="color_fuente">2.3</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

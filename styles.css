@@ -1,0 +1,86 @@
+body {
+    font-family: "mont";
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: #0f6a54;
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.refrescar {
+    text-align: center;
+    margin-top: 50px;
+}
+
+a {
+    padding: 10px 20px;
+    background-color: goldenrod;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.color_fuente {
+    color: aliceblue;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.density-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.density-table th, .density-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.density-table th {
+    background-color: black;
+}
+
+.density-table td {
+    background-color: #0f6a54;
+}
